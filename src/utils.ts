@@ -14,7 +14,7 @@ export async function tryGetImageUrl(name: string, dev?: boolean): Promise<strin
     const json = response.data as {
       data: { profile_image_url: string }[]
     }
-    return json?.data[0]?.profile_image_url.replace('_normal', '') as string
+    return json?.data[0]?.profile_image_url.replace('_normal', '')
   } catch (e) {
     console.log(e)
     return undefined
