@@ -1,11 +1,11 @@
 # Simplified Twitter Cardinal Identity Package
 
-___
 
 Install the dependencies
 ```
 yarn
 ```
+___
 
 Run the main test:
 ```
