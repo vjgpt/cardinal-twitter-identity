@@ -1,2 +1,13 @@
-# cardinal-identity
-Simple library to get the Twitter namespace cardinal identity of a public key
+# Simplified Twitter Cardinal Identity Package
+
+___
+
+Install the dependencies
+```
+yarn
+```
+
+Run the main test:
+```
+yarn test
+```
