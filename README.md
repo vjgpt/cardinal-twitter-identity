@@ -1,14 +1,25 @@
 # Simplified Twitter Cardinal Identity Package
 
 
-Install the dependencies
+## Installation
 ```
-yarn
-```
-___
-
-Run the main test:
-```
-yarn test
+yarn add cardinal-twitter-identity
 ```
 
+
+## Usage
+```ts
+import { getIdentity } from 'cardinal-twitter-identity';
+import { PublicKey } from '@solana/web3.js';
+
+async function main() {
+  const publicKey = new PublicKey('...');
+  const identity = await getIdentity(publicKey);
+  console.log(identity);
+  //  Output: {
+  //    username: 'elonmusk',
+  //    displayImage: '<image_url>',
+  //  }
+}
+
+```
