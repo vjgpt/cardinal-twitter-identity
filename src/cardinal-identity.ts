@@ -24,7 +24,7 @@ async function getIdentity(address: PublicKey): Promise<Identity | undefined> {
       displayImage: imageUrl
     }
   } catch (e) {
-    console.error(e)
+    throw new Error(e)
   }
 }
 
